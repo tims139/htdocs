@@ -41,13 +41,13 @@
 				echo '<li>';
 				if($i==1) { 
 					echo get_the_post_thumbnail($post->ID, 'xlarge-thumb');
-					echo '<h3>';
+					echo '<header>';
 					echo '<span class="category_name gray">';
 					echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>';
 					echo ' <i class="icon-angle-right"></i> ';
 					echo '</span>';
 					echo '<a href="'.get_permalink($post->ID).'">'.$post->post_title.'</a>';
-					echo '</h3>';
+					echo '</header>';
 					echo $post->post_excerpt;
 				} 
 				
@@ -88,6 +88,11 @@
 			if ($max > 1) echo '</nav>';
 		}
 
-	/* test */
-
+	/* Слайдер на главной */
+		function slider_main(){
+			$posts = get_posts(array('numberposts' => 4));
+			foreach ($posts as $post){
+				echo '<a href="'.get_permalink($post->ID).'" data-url="'.get_permalink($post->ID).'" data-text="'.$post->post_title.'" title="'.$post->post_title.'">'.get_the_post_thumbnail($post->ID).'</a>';
+			}
+		}
 ?>

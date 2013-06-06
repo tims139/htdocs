@@ -527,6 +527,12 @@ h2.h_lines{
 	font-size: 13px;
 }
 
+.start_sections li:first-child header{
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 5px;
+}
+
 .start_sections li:first-child img{
 	margin-bottom: 5px;
 	left:0;

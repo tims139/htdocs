@@ -8,12 +8,9 @@
 
 			<div class="slider">
 	            <div id="slider">   
-
-	                <a href="#" data-url="#" data-text="Применение циркуляционных насосов" title="123"><img src="<?php echo bloginfo('template_url'); ?>/img/test3.jpg" width="450" height="300"></a>
-	                <a href="#" data-url="#" data-text="Мелкозаглубленный ленточный фундамент" title="123"><img src="<?php echo bloginfo('template_url'); ?>/img/test5.jpg" width="450" height="300"></a>
-	                <a href="#" data-url="#" data-text="Установка металлочерепицы" title="123"><img src="<?php echo bloginfo('template_url'); ?>/img/test6.jpg" width="450" height="300"></a>
-	                <a href="#" data-url="#" data-text="Характеристики материала и советы по его выбору" title="123"><img src="<?php echo bloginfo('template_url'); ?>/img/test5.jpg" width="450" height="300"></a>
-
+					<?php
+						slider_main();
+					?>
 	            </div>
 	            <div id="slider-nav"></div>
 	        </div>
