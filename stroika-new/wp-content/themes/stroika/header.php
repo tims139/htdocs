@@ -9,7 +9,6 @@
 		<script src="<?php echo bloginfo('template_url'); ?>/js/jquery.cycle.all.js" type="text/javascript"></script>
 		<script src="<?php echo bloginfo('template_url'); ?>/js/props.js" type="text/javascript"></script>
 		<!--[if lt IE 9]><script src="<?php echo bloginfo('template_url'); ?>/js/html5.js" type="text/javascript"></script><![endif]-->
-		<!--[if gte IE 9]><link href="<?php echo bloginfo('template_url'); ?>/css/ie9.css" rel="stylesheet" type="text/css" media="screen"><![endif]-->
 	</head>
 	<body>
 		

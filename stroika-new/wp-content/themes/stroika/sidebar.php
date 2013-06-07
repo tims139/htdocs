@@ -1,8 +1,20 @@
 <h3>Темы раздела:</h3>
 <div class="left_orange_border mb30">
-    <ul class="fnt13 list_mb10">
-        <?php wp_list_categories('orderby=id&use_desc_for_title=0&child_of=2&hide_empty=0&current_category=1&title_li='); ?>
-    </ul>
+    <noindex>
+        <ul class="fnt13 list_mb10">
+            <?php 
+                $category = get_the_category();
+                $catParID = $category[0]->category_parent;
+                if (is_single()){
+                    $myCat = $category[0]->cat_ID;   
+                }
+                else{
+                    $myCat = $category->cat_ID;
+                }
+                wp_list_categories('orderby=id&use_desc_for_title=0&child_of='.$catParID.'&current_category='.$myCat.'&title_li=');
+            ?>
+        </ul>
+    </noindex>
 </div>
 
 <div class="orange_bg_gradient brd4 fnt13">

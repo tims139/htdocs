@@ -1,6 +1,6 @@
-.slider {width: 670px; height: 300px; overflow: hidden; position: relative; margin-bottom: 30px;}
+.slider {width: 670px; height: 300px; overflow: hidden; position: relative; margin-bottom: 30px; z-index:20;}
 
-#slider {width: 450px; height: 300px;}
+#slider {width: 450px; height: 300px; }
 
 #slider img {
     display: block;
